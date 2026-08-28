@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CODIORA — A modern freelancing marketplace connecting businesses with skilled freelancers.">
+  <title>CODIORA | Our Code Builds Your Vision</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="brand" aria-label="CODIORA home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>
+          <strong>paklaunce</strong>
+          <small>only freelaunce marketplace in Pakistan</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a class="active" href="#home">Home</a>
+        <a href="#freelancers">Find Freelancers</a>
+        <a href="#jobs">Find Jobs</a>
+        <a href="#about">About</a>
+        <div class="nav-actions">
+          <button class="btn btn-outline" data-modal="login">Login</button>
+          <button class="btn btn-primary" data-modal="register">Register</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span></span> THE FUTURE OF FREELANCING</div>
+          <h1>Find Talent.<br>Get Things <em>Done.</em></h1>
+          <p>CODIORA connects businesses with skilled freelancers across the globe. Find the right talent or the perfect job to build your vision.</p>
+
+          <div class="hero-buttons">
+            <a href="#freelancers" class="btn btn-primary btn-large">Hire Freelancers <span>→</span></a>
+            <a href="#how-it-works" class="btn btn-outline btn-large"><span class="play">▶</span> How It Works</a>
+          </div>
+
+          <div class="hero-stats">
+            <div><strong>5,000+</strong><span>Freelancers</span></div>
+            <div><strong>1,200+</strong><span>Jobs Posted</span></div>
+            <div><strong>98%</strong><span>Success Rate</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glow"></div>
+          <div class="orbital orbital-one"></div>
+          <div class="orbital orbital-two"></div>
+          <div class="world">
+            <div class="world-grid"></div>
+            <span class="dot d1"></span><span class="dot d2"></span>
+            <span class="dot d3"></span><span class="dot d4"></span>
+            <span class="connection c1"></span><span class="connection c2"></span>
+            <span class="connection c3"></span>
+          </div>
+          <div class="profile profile-1"><span>AJ</span><i></i></div>
+          <div class="profile profile-2"><span>SM</span><i></i></div>
+          <div class="profile profile-3"><span>DK</span><i></i></div>
+          <div class="profile profile-4"><span>ET</span><i></i></div>
+          <div class="floating-card card-top"><b>↗</b><span><strong>5,000+</strong> Freelancers</span></div>
+          <div class="floating-card card-right"><b>▣</b><span><strong>1,200+</strong> Jobs Posted</span></div>
+          <div class="floating-card card-bottom"><b>✓</b><span><strong>Global</strong> Opportunities</span></div>
+        </div>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="container search-wrap">
+        <div class="search-tabs">
+          <button class="search-tab active" data-search="services">Search for services</button>
+          <button class="search-tab" data-search="freelancers">Search freelancers</button>
+        </div>
+        <form class="search-form" id="searchForm">
+          <div class="search-input">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="What service are you looking for?" autocomplete="off">
+          </div>
+          <select id="categorySelect">
+            <option value="">Select category</option>
+            <option>Web Development</option>
+            <option>Graphic Design</option>
+            <option>Mobile App Development</option>
+            <option>Data Analysis</option>
+            <option>Digital Marketing</option>
+          </select>
+          <button class="btn btn-primary search-button" type="submit">Search</button>
+        </form>
+        <p class="search-message" id="searchMessage"></p>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker">EXPLORE</span>
+          <h2>Popular Categories</h2>
+          <p>Find specialized talent for every stage of your next big idea.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card" data-category="Web Development">
+            <div class="category-icon blue">&lt;/&gt;</div>
+            <h3>Web Development</h3>
+            <p>Build responsive and high-performance websites.</p>
+            <button>Explore <span>→</span></button>
+          </article>
+          <article class="category-card" data-category="Graphic Design">
+            <div class="category-icon purple">✎</div>
+            <h3>Graphic Design</h3>
+            <p>Design stunning logos, brands, and visuals that stand out.</p>
+            <button>Explore <span>→</span></button>
+          </article>
+          <article class="category-card" data-category="Mobile App Development">
+            <div class="category-icon green">▯</div>
+            <h3>Mobile App Development</h3>
+            <p>Create powerful mobile apps for iOS and Android.</p>
+            <button>Explore <span>→</span></button>
+          </article>
+          <article class="category-card" data-category="Data Analysis">
+            <div class="category-icon yellow">▥</div>
+            <h3>Data Analysis</h3>
+            <p>Turn data into insights and drive better decisions.</p>
+            <button>Explore <span>→</span></button>
+          </article>
+          <article class="category-card" data-category="Digital Marketing">
+            <div class="category-icon cyan">⌁</div>
+            <h3>Digital Marketing</h3>
+            <p>Grow your brand with SEO, social media, and ads.</p>
+            <button>Explore <span>→</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker">SIMPLE PROCESS</span>
+          <h2>How It Works</h2>
+          <p>From idea to execution in four simple steps.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-icon"><span>01</span> ♙</div>
+            <h3>Create an Account</h3>
+            <p>Sign up for free and create your profile.</p>
+          </article>
+          <div class="step-line"></div>
+          <article class="step">
+            <div class="step-icon"><span>02</span> ⌕</div>
+            <h3>Find or Post</h3>
+            <p>Find the right freelancers or post a job.</p>
+          </article>
+          <div class="step-line"></div>
+          <article class="step">
+            <div class="step-icon"><span>03</span> ♢</div>
+            <h3>Connect & Collaborate</h3>
+            <p>Discuss requirements and collaborate easily.</p>
+          </article>
+          <div class="step-line"></div>
+          <article class="step">
+            <div class="step-icon success"><span>04</span> ✓</div>
+            <h3>Get Work Done</h3>
+            <p>Approve the work and make secure payments.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREELANCERS -->
+    <section class="section" id="freelancers">
+      <div class="container">
+        <div class="section-heading row-heading">
+          <div>
+            <span class="section-kicker">TOP TALENT</span>
+            <h2>Top Rated Freelancers</h2>
+            <p>Work with professionals trusted by businesses worldwide.</p>
+          </div>
+          <a href="#freelancers" class="text-link">View All Freelancers →</a>
+        </div>
+
+        <div class="freelancer-grid">
+          <article class="freelancer-card">
+            <button class="favorite" aria-label="Add Alex to favorites">♡</button>
+            <div class="freelancer-head">
+              <div class="avatar avatar-a">AJ<i></i></div>
+              <div><h3>Alex Johnson</h3><span>Full Stack Developer</span></div>
+            </div>
+            <div class="rating">★ <b>4.9</b> (128)</div>
+            <p>I will build modern, scalable web applications.</p>
+            <div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            <div class="card-bottom"><strong>From $35/hr</strong><a href="#">View Profile →</a></div>
+          </article>
+
+          <article class="freelancer-card">
+            <button class="favorite" aria-label="Add Sophia to favorites">♡</button>
+            <div class="freelancer-head">
+              <div class="avatar avatar-b">SM<i></i></div>
+              <div><h3>Sophia Martinez</h3><span>UI/UX Designer</span></div>
+            </div>
+            <div class="rating">★ <b>4.8</b> (96)</div>
+            <p>I will design beautiful and user-friendly interfaces.</p>
+            <div class="tags"><span>Figma</span><span>Adobe XD</span><span>UI/UX</span></div>
+            <div class="card-bottom"><strong>From $30/hr</strong><a href="#">View Profile →</a></div>
+          </article>
+
+          <article class="freelancer-card">
+            <button class="favorite" aria-label="Add Daniel to favorites">♡</button>
+            <div class="freelancer-head">
+              <div class="avatar avatar-c">DK<i></i></div>
+              <div><h3>Daniel Kim</h3><span>Mobile App Developer</span></div>
+            </div>
+            <div class="rating">★ <b>4.9</b> (87)</div>
+            <p>I will build high-quality mobile apps.</p>
+            <div class="tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+            <div class="card-bottom"><strong>From $40/hr</strong><a href="#">View Profile →</a></div>
+          </article>
+
+          <article class="freelancer-card">
+            <button class="favorite" aria-label="Add Emily to favorites">♡</button>
+            <div class="freelancer-head">
+              <div class="avatar avatar-d">ET<i></i></div>
+              <div><h3>Emily Turner</h3><span>Digital Marketing Expert</span></div>
+            </div>
+            <div class="rating">★ <b>4.8</b> (112)</div>
+            <p>I will boost your brand and increase conversions.</p>
+            <div class="tags"><span>SEO</span><span>Google Ads</span><span>SMM</span></div>
+            <div class="card-bottom"><strong>From $25/hr</strong><a href="#">View Profile →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item"><div class="trust-icon">◇</div><div><h3>Secure Payments</h3><p>Your payments are safe with CODIORA.</p></div></div>
+        <div class="trust-item"><div class="trust-icon">◉</div><div><h3>24/7 Support</h3><p>We're here to help you anytime, anywhere.</p></div></div>
+        <div class="trust-item"><div class="trust-icon success">✓</div><div><h3>Quality Work</h3><p>Top talent. Quality results. Always.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="about">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span><strong>CODIORA</strong><small>Our Code Builds Your Vision</small></span>
+        </a>
+        <p>Connecting global talent with great opportunities. Build, grow and succeed together.</p>
+        <div class="socials"><a href="#">f</a><a href="#">𝕏</a><a href="#">in</a><a href="#">◎</a></div>
+      </div>
+
+      <div class="footer-column">
+        <h4>For Clients</h4>
+        <a href="#freelancers">Find Freelancers</a><a href="#jobs">Post a Job</a><a href="#how-it-works">How It Works</a><a href="#">Pricing</a><a href="#">Enterprise</a>
+      </div>
+      <div class="footer-column">
+        <h4>For Freelancers</h4>
+        <a href="#jobs">Find Jobs</a><a href="#">Create Profile</a><a href="#">Freelancer Resources</a><a href="#">Success Stories</a><a href="#">Community</a>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <a href="#about">About Us</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Contact Us</a><a href="#">Terms & Conditions</a>
+      </div>
+      <div class="newsletter">
+        <h4>Subscribe to our newsletter</h4>
+        <p>Get the latest updates and tips delivered to your inbox.</p>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required>
+          <button aria-label="Subscribe">→</button>
+        </form>
+        <small id="newsletterMessage"></small>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 CODIORA. All rights reserved.</span>
+      <div><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Service</a><i>|</i><a href="#">Cookie Policy</a></div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-logo">&lt;/&gt;</div>
+      <h2 id="modalTitle">Welcome Back</h2>
+      <p id="modalText">Log in to continue to CODIORA.</p>
+      <form id="authForm">
+        <label>Email<input type="email" required placeholder="you@example.com"></label>
+        <label>Password<input type="password" required placeholder="••••••••"></label>
+        <button class="btn btn-primary btn-full" type="submit" id="modalSubmit">Login</button>
+      </form>
+      <small id="authMessage"></small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
