@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My Orders & Projects | Paklaunce</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="header"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">PK</span><span><strong>PAKLAUNCE</strong><small>Only Freelance Marketplace in Pakistan</small></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="nav-links"><a href="index.html">Home</a><a href="services.html">Find Freelancers</a><a href="jobs.html">Find Jobs</a><a class="active" href="orders.html">My Projects</a><a href="profile.html">Profile</a><div class="nav-actions"><a class="btn btn-outline" href="services.html">Login</a><a class="btn btn-primary" href="profile.html">Account</a></div></nav></div></header>
+<main>
+<section class="project-hero"><div class="container project-hero-grid"><div><span class="kicker">PROJECT WORKSPACE</span><h1>My Orders & Projects</h1><p>Track active contracts, milestones, deadlines, deliveries, and completed freelance projects in one place.</p></div><div class="project-actions"><a class="btn btn-outline" href="my-proposals.html">My Proposals</a><a class="btn btn-primary" href="post-job.html">Post a Job</a></div></div></section>
+<section class="section" style="padding-top:20px"><div class="container">
+<div class="project-tabs"><button class="project-tab active">All Projects</button><a class="project-tab" href="orders.html">Orders</a><a class="project-tab" href="jobs.html">Find More Work</a></div>
+<div class="project-layout">
+<div><div class="toolbar" style="grid-template-columns:1fr 1fr;margin:0 0 13px"><select id="projectStatusFilter"><option value="All">All Statuses</option><option>Pending</option><option>In Progress</option><option>Submitted</option><option>Completed</option><option>Cancelled</option></select><select id="projectRoleFilter"><option value="All">All Views</option><option value="Client">Client Projects</option><option value="Freelancer">Freelancer Projects</option></select></div>
+<div class="results-meta"><span id="projectCount">Loading...</span><span>Live local demo data</span></div><div class="project-list" id="projectGrid"></div></div>
+<aside class="project-side"><div class="side-widget"><h3>Project Overview</h3><div class="summary-number" id="summaryTotal">0</div><div class="summary-label">Total Projects</div><div class="summary-grid" style="margin-top:15px"><div class="summary-cell"><strong id="summaryActive">0</strong><span>Active</span></div><div class="summary-cell"><strong id="summaryCompleted">0</strong><span>Completed</span></div></div></div>
+<div class="side-widget"><h3>Total Project Value</h3><div class="summary-number" id="summaryValue">$0</div><div class="summary-label">Across all projects</div></div>
+<div class="side-widget"><h3>Upcoming Deadlines</h3><div class="deadline-list" id="deadlineList"></div></div></aside>
+</div></div></section></main>
+<footer class="footer"><div class="container footer-bottom"><span>© 2026 Paklaunce. All rights reserved.</span><div><a href="index.html">Home</a><i>|</i><a href="services.html">Services</a><i>|</i><a href="jobs.html">Jobs</a></div></div></footer>
+<script src="app.js"></script></body></html>
