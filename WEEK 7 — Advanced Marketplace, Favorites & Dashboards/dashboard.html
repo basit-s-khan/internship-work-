@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Marketplace Dashboard — Paklaunce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="week7-dashboard">
+  <header class="nav"><div class="container nav-inner">
+    <a class="brand" href="index.html">paklaunce<span>.</span><small>ONLY FREELANCE MARKETPLACE IN PAKISTAN</small></a>
+    <nav class="links"><a href="index.html">Home</a><a href="browse.html">Advanced Search</a><a href="services.html">Find Freelancers</a><a href="jobs.html">Find Jobs</a><a href="favorites.html">Favorites</a><a class="active" href="dashboard.html">Dashboard</a></nav>
+    <div class="nav-actions"><a class="btn" href="messages.html">Messages</a><a class="btn primary" href="orders.html">Projects</a></div>
+  </div></header>
+  <main><section class="section"><div class="container">
+    <div class="section-head"><div><span class="eyebrow">WEEK 7 · WORKSPACE</span><h1 class="w7-title" id="dashboardTitle">Marketplace dashboard</h1><p class="muted">A role-specific view of your marketplace activity and available project data.</p></div></div>
+    <div class="w7-dashboard-toolbar"><div class="w7-role-switch" role="group" aria-label="Dashboard role"><button type="button" data-role="freelancer">Freelancer view</button><button type="button" data-role="client">Client view</button></div><span class="muted" id="dashboardIdentity"></span></div>
+    <div class="w7-metrics" id="dashboardMetrics" aria-live="polite"></div>
+    <div class="w7-dashboard-grid">
+      <section class="card w7-dashboard-panel"><div class="section-head"><div><h2>Services</h2><p class="muted">Published marketplace listings</p></div><a class="btn" href="my-services.html">Manage</a></div><div class="w7-dashboard-list" id="dashboardServices"></div></section>
+      <section class="card w7-dashboard-panel"><div class="section-head"><div><h2>Jobs</h2><p class="muted">Open and recently posted work</p></div><a class="btn" href="jobs.html">Browse</a></div><div class="w7-dashboard-list" id="dashboardJobs"></div></section>
+      <section class="card w7-dashboard-panel"><div class="section-head"><div><h2>Proposals</h2><p class="muted">Proposal activity</p></div><a class="btn" href="my-proposals.html">View</a></div><div class="w7-dashboard-list" id="dashboardProposals"></div></section>
+      <section class="card w7-dashboard-panel"><div class="section-head"><div><h2>Orders & projects</h2><p class="muted">Tracked project work</p></div><a class="btn" href="orders.html">Open projects</a></div><div class="w7-dashboard-list" id="dashboardProjects"></div></section>
+      <section class="card w7-dashboard-panel"><div class="section-head"><div><h2>Reviews</h2><p class="muted">Reputation and feedback</p></div><a class="btn" href="reviews.html">All reviews</a></div><div class="w7-dashboard-list" id="dashboardReviews"></div></section>
+      <section class="card w7-dashboard-panel"><div class="section-head"><div><h2>Messages</h2><p class="muted">Recent conversations</p></div><a class="btn" href="messages.html">Open inbox</a></div><div class="w7-dashboard-list" id="dashboardMessages"></div></section>
+    </div>
+    <section class="w7-market-stat-section"><div class="section-head"><div><h2>Marketplace statistics</h2><p class="muted">Live counts from the Week 1–6 browser demo data.</p></div></div><div class="w7-stat-grid" id="dashboardMarketplaceStats"></div></section>
+  </div></section></main>
+  <footer class="footer"><div class="container">paklaunce. — Only Freelance Marketplace in Pakistan.</div></footer><div class="toast" id="w7Toast" role="status"></div>
+  <script src="jobs.js"></script><script src="app.js"></script><script src="week7.js"></script>
+</body>
+</html>
