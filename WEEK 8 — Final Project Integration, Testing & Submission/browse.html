@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Advanced Marketplace Search — Paklaunce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="week7-browse">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">paklaunce<span>.</span><small>ONLY FREELANCE MARKETPLACE IN PAKISTAN</small></a>
+      <nav class="links">
+        <a href="index.html">Home</a><a href="services.html">Find Freelancers</a><a href="jobs.html">Find Jobs</a>
+        <a class="active" href="browse.html">Advanced Search</a><a href="favorites.html">Favorites</a><a href="dashboard.html">Dashboard</a>
+      </nav>
+      <div class="nav-actions"><a class="btn" href="favorites.html">♡ Favorites</a><a class="btn primary" href="dashboard.html">Dashboard</a></div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">WEEK 7 · MARKETPLACE</span><h1 class="w7-title">Find the right fit</h1><p class="muted">Search services, freelancers, jobs, skills and categories with practical marketplace filters.</p></div>
+        </div>
+        <form class="w7-filter-panel card" id="marketplaceSearch">
+          <label class="w7-query"><span>Search</span><input id="w7Query" type="search" placeholder="Services, freelancers, jobs, skills or categories"></label>
+          <label><span>Browse</span><select id="w7Type"><option value="All">Everything</option><option value="Services">Services</option><option value="Freelancers">Freelancers</option><option value="Jobs">Jobs</option></select></label>
+          <label><span>Category</span><select id="w7Category"><option value="All">All categories</option></select></label>
+          <label><span>Minimum price / budget</span><input id="w7MinPrice" type="number" min="0" placeholder="Any"></label>
+          <label><span>Maximum price / budget</span><input id="w7MaxPrice" type="number" min="0" placeholder="Any"></label>
+          <label><span>Minimum rating</span><select id="w7Rating"><option value="0">Any rating</option><option value="3">3+ stars</option><option value="4">4+ stars</option><option value="4.5">4.5+ stars</option></select></label>
+          <label><span>Delivery within</span><select id="w7Delivery"><option value="0">Any delivery time</option><option value="3">3 days</option><option value="5">5 days</option><option value="7">7 days</option><option value="14">14 days</option></select></label>
+          <label><span>Experience</span><select id="w7Experience"><option value="0">Any experience</option><option value="1">1+ years</option><option value="3">3+ years</option><option value="5">5+ years</option></select></label>
+          <label><span>Sort by</span><select id="w7Sort"><option value="newest">Newest</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option><option value="rating">Highest Rating</option><option value="popular">Popularity</option></select></label>
+          <div class="w7-filter-actions"><button class="btn primary" type="submit">Search marketplace</button><button class="btn" id="w7Reset" type="reset">Clear filters</button></div>
+        </form>
+        <div class="w7-results-meta" id="w7ResultSummary" aria-live="polite">Loading marketplace…</div>
+        <section class="w7-result-group" id="w7ServiceGroup"><div class="section-head"><div><h2>Services</h2><p class="muted">Offers from freelancers</p></div></div><div class="grid" id="w7Services"></div></section>
+        <section class="w7-result-group" id="w7FreelancerGroup"><div class="section-head"><div><h2>Freelancers</h2><p class="muted">People behind the work</p></div></div><div class="grid" id="w7Freelancers"></div></section>
+        <section class="w7-result-group" id="w7JobGroup"><div class="section-head"><div><h2>Jobs</h2><p class="muted">Projects accepting proposals</p></div></div><div class="job-grid" id="w7Jobs"></div></section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><strong>paklaunce.</strong><span>Only Freelance Marketplace in Pakistan.</span></div></footer>
+  <div class="toast" id="w7Toast" role="status"></div>
+  <script src="jobs.js"></script><script src="app.js"></script><script src="week7.js"></script>
+</body>
+</html>
